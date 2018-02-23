@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Can be used on Mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Comments</title>
+
+    <!-- React and a Babel to transpile JSX on client side-->
+    <script src="lib/react/react.production.min.js"></script>
+    <script src="lib/react/react-dom.production.min.js"></script>
+    <script src="lib/babel/babel.min.js" data-presets="es2015,react,stage1"></script>
+
+    <!-- Semantic UI -->
+    <script src="lib/semantic-ui/semantic-ui-react.min.js"></script>
+    <link rel="stylesheet" href="lib/semantic-ui/semantic.min.css">
+
+    <!-- OpenMedia SDK -->
+    <script src="lib/OMWebPluginLib/common/index.js"></script>
+    <script src="lib/OMWebPluginLib/common/api.js"></script>
+    <script src="lib/OMWebPluginLib/host/channel.js"></script>
+    <script src="lib/OMWebPluginLib/host/api.js"></script>
+    <script src="lib/OMWebPluginLib/plugin/index.js"></script>
+
+    <!-- And finally, our application files -->
+    <!-- Make sure to load the files following the dependecy order -->
+    <script type="text/babel" src="src/comments.js"></script>
+    <script type="text/babel" src="src/main.js">
+    
+    </script>
+</head>
+
+<body>
+   
+    <div id="root"></div>
+
+</body>
+
+</html>
